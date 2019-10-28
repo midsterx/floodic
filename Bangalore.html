@@ -1,0 +1,1841 @@
+<html>
+<head>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>Google Maps - pygmaps </title>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=visualization&sensor=true_or_false&key=AIzaSyC3PGO0YO_ScHdVP9jj0b7T4ahljEii2qA"></script>
+<script type="text/javascript">
+	function initialize() {
+		var centerlatlng = new google.maps.LatLng(12.971600, 77.594600);
+		var myOptions = {
+			zoom: 13,
+			center: centerlatlng,
+			mapTypeId: google.maps.MapTypeId.ROADMAP
+		};
+		var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+
+		var latlng = new google.maps.LatLng(13.118181, 77.584099);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Chowdeswari Ward, 1",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(13.097233, 77.559882);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Atturu, 2",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(13.087350, 77.582062);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Yelahanka Satellite Town, 3",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(13.007427, 77.673252);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Vijnanapura, 4",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(13.011865, 77.710847);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Basavanapura, 5",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(13.001202, 77.734684);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Hudi, 6",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(13.004296, 77.685705);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Devasandra, 7",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.992124, 77.672530);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "A Narayanapura, 8",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.978870, 77.678054);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Vijnana Nagar, 9",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.956278, 77.665057);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "HAL Airport, 10",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(13.058177, 77.560660);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Dodda Bommasandra, 11",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(13.071664, 77.544146);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Kuvempu Nagar, 12",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(13.090211, 77.611944);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Jakkuru, 13",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(13.051173, 77.622079);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Thanisandra, 14",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(13.056759, 77.600823);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Byatarayanapura, 15",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(13.048862, 77.580213);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Kodigehalli, 16",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(13.072562, 77.567277);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Vidyaranyapura, 17",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.944026, 77.484401);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Ullalu, 18",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.918215, 77.481232);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Kengeri, 19",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(13.023179, 77.483674);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Dodda Bidarakallu, 20",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.980270, 77.490682);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Herohalli, 21",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(13.049718, 77.541864);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Jalahalli, 22",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.912755, 77.521082);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Rajarajeshwari Nagar, 23",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(13.035894, 77.554936);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "J P Park, 24",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(13.026223, 77.554749);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Yeshwanthpura, 25",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(13.026453, 77.537878);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "HMT Ward, 26",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(13.019438, 77.531484);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Lakshmi Devi Nagar, 27",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(13.008234, 77.524065);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Laggere, 28",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.984524, 77.517146);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Kottegepalya, 29",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(13.065831, 77.521810);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Shettihalli, 30",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(13.054770, 77.514792);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Mallasandra, 31",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(13.057810, 77.501077);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Bagalakunte, 32",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(13.046237, 77.513590);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "T Dasarahalli, 33",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(13.036945, 77.506212);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Chokkasandra, 34",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(13.017921, 77.509659);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Peenya Industrial Area, 35",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(13.004570, 77.515492);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Rajagopal Nagar, 36",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.998830, 77.502262);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Hegganahalli, 37",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.989608, 77.524884);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Vrisabhavathi Nagar, 38",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(13.011136, 77.534021);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Nandini Layout, 39",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(13.015617, 77.543824);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Marappana Palya, 40",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(13.003700, 77.548614);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Nagapura, 41",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(13.008056, 77.539077);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Mahalakshimpuram, 42",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.996239, 77.530173);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Shakthi Ganapathi Nagar, 43",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(13.001107, 77.531781);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Shankar Matt, 44",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(13.016212, 77.576487);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Aramane Nagara, 45",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(13.031758, 77.560871);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Mattikere, 46",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(13.016905, 77.559994);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Malleswaram, 47",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(13.000445, 77.578132);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Rajamahal Guttahalli, 48",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(13.003390, 77.569299);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Kadu Malleshwar Ward, 49",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(13.007501, 77.556363);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Subramanya Nagar, 50",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.997411, 77.559470);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Gayithri Nagar, 51",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(13.038472, 77.572505);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Radhakrishna Temple Ward, 52",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(13.040135, 77.577876);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Sanjaya Nagar, 53",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(13.033279, 77.587991);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Ganga Nagar, 54",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(13.034048, 77.595474);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Hebbala, 55",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(13.034621, 77.602807);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Vishwanath Nagenahalli, 56",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(13.026227, 77.597630);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Manorayanapalya, 57",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(13.018455, 77.590235);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Gangenahalli, 58",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(13.016882, 77.595601);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Jayachamarajendra Nagar, 59",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(13.017079, 77.614444);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Kushal Nagar, 60",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(13.026016, 77.607638);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Kaval Bairasandra, 61",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(13.014865, 77.604141);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Devara Jeevanahalli, 62",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(13.014030, 77.610438);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Muneshwara Nagar, 63",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(13.005374, 77.617726);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Sagayarapuram, 64",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(13.006002, 77.605990);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "S K Garden, 65",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.994560, 77.611075);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Pulikeshinagar, 66",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(13.031301, 77.616394);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Nagavara, 67",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(13.035610, 77.633014);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "HBR Layout, 68",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(13.011237, 77.649293);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Banasavadi, 69",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(13.008509, 77.636321);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Kammanahalli, 70",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(13.019370, 77.632570);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Kacharkanahalli, 71",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(13.015162, 77.619785);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Kadugondanahalli, 72",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(13.010497, 77.626966);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Lingarajapura, 73",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.999886, 77.631354);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Maruthi Seva Nagar, 74",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.954978, 77.653856);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Konena Agrahara, 75",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(13.000656, 77.649030);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Benniganahalli, 76",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.983233, 77.669087);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "C V Raman Nagar, 77",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.975827, 77.661907);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "New Tippasandara, 78",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.989167, 77.629312);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Sarvagna Nagar, 79",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.978043, 77.634028);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Hoysala Nagar, 80",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.964084, 77.655774);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Jeevanbhima Nagar, 81",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.974807, 77.597640);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Sampangiram Nagar, 82",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(13.005299, 77.599600);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Ramaswamy Palya, 83",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.994945, 77.600571);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Jayamahal, 84",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.980598, 77.621335);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Halsoor, 85",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.986862, 77.609953);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Bharathi Nagar, 86",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.989146, 77.605556);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Shivaji Nagar, 87",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.987664, 77.583914);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Vasanth Nagar, 88",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.967881, 77.604656);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Shantala Nagar, 89",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.961724, 77.638105);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Domlur, 90",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.940933, 77.638413);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Agaram, 91",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.953190, 77.619198);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Vannarpet, 92",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.951582, 77.613632);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Nilasandra, 93",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.955482, 77.605746);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Shanthi Nagar, 94",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.975299, 77.632392);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Jogupalya, 95",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.970699, 77.576852);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Chickpete, 96",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.969818, 77.567182);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Cottonpete, 97",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.971439, 77.559082);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Binnipete, 98",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.997635, 77.574470);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Dattatreya Temple, 99",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.981671, 77.575958);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Gandhinagar, 100",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.982994, 77.567556);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Subhash Nagar, 101",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.982469, 77.562903);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Okalipuram, 102",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.991187, 77.542309);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Basaveshwara Nagar, 103",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.986023, 77.532751);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Kamakshipalya, 104",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.988956, 77.548487);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Shivanagara, 105",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.981644, 77.557206);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Sriramamandir, 106",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.990575, 77.562918);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Dayananda Nagar, 107",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.990355, 77.560093);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Prakash Nagar, 108",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.996113, 77.547184);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Rajaji Nagar, 109",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.981058, 77.523330);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Kaveripura, 110",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.977056, 77.536095);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Govindaraja Nagar, 111",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.980486, 77.542013);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Agrahara Dasarahalli, 112",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.979058, 77.549333);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Dr. Raj Kumar Ward, 113",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.972352, 77.532589);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Marenahalli, 114",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.966451, 77.528041);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Maruthi Mandir ward, 115",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.968966, 77.521238);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Mudalapalya, 116",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.956639, 77.516370);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Nagarabhavi, 117",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.945062, 77.517410);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Nayandahalli, 118",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.971756, 77.555025);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Kempapura Agrahara, 119",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.972703, 77.549187);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Vijayanagar, 120",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.967302, 77.547386);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Hosahalli, 121",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.959520, 77.527476);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Attiguppe, 122",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.957430, 77.538360);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Hampi Nagar, 123",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.958484, 77.544179);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Bapuji Nagar, 124",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.949814, 77.544730);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Gali Anjenaya Temple ward, 125",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.944735, 77.537650);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Deepanjali Nagar, 126",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.963885, 77.548991);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Padarayanapura, 127",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.961275, 77.552327);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Jagajivanaramnagar, 128",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.965587, 77.556358);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Rayapuram, 129",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.965638, 77.564775);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Chalavadipalya, 130",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.965112, 77.571790);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "K R Market, 131",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.956777, 77.560638);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Chamrajapet, 132",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.953554, 77.554966);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Azad Nagar, 133",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.958818, 77.585980);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Sudham Nagara, 134",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.964049, 77.580875);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Dharmaraya Swamy Temple, 135",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.947728, 77.564942);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Sunkenahalli, 136",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.950653, 77.580622);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Vishveshwara Puram, 137",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.943164, 77.592395);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Siddapura, 138",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.949705, 77.595846);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Hombegowda Nagara, 139",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.938983, 77.588373);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Jayanagar, 140",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.949894, 77.559661);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Hanumanth Nagar, 141",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.946275, 77.552259);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Srinagar, 142",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.936543, 77.568178);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Basavanagudi, 143",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.939559, 77.548036);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Girinagar, 144",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.932234, 77.552867);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Katriguppe, 145",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.933963, 77.560010);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Vidyapeeta ward, 146",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.924740, 77.538494);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Hosakerehalli, 147",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.924468, 77.562995);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Ganesh Mandir ward, 148",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.923684, 77.573658);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Karisandra, 149",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.933566, 77.573529);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Yediyur, 150",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.913779, 77.570316);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Banashankari Temple ward, 151",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.905777, 77.559963);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Kumaraswamy Layout, 152",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.912795, 77.554529);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Padmanabha Nagar, 153",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.941917, 77.603722);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Lakkasandra, 154",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.944519, 77.614224);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Adugodi, 155",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.942550, 77.627517);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Ejipura, 156",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.930892, 77.630303);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Koramangala, 157",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.927284, 77.607911);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Suddagunte Palya, 158",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.905983, 77.581916);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Sarakki, 159",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.920658, 77.631516);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Jakkasandra, 160",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.911964, 77.613274);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "BTM Layout, 161",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.926022, 77.587575);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Pattabhiram Nagar, 162",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.932042, 77.589025);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Byrasandra, 163",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.917938, 77.576442);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Shakambari Nagar, 164",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.948669, 77.738971);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Varthuru, 165",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.933726, 77.666126);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Bellanduru, 166",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.990028, 77.714029);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Garudachar Playa, 167",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(13.000196, 77.767488);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Kadugodi, 168",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.961916, 77.754505);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Hagadur, 169",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.967908, 77.706671);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Dodda Nekkundi, 170",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.916164, 77.648593);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "HSR Layout, 171",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.901603, 77.620814);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Bommanahalli, 172",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.901207, 77.577027);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Jaraganahalli, 173",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.899344, 77.592964);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Puttenahalli, 174",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.902843, 77.612429);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Bilekhalli, 175",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.895862, 77.628081);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Hongasandra, 176",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.895437, 77.640684);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Mangammanapalya, 177",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.880973, 77.656728);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Singasandra, 178",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.878461, 77.605137);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Arakere, 179",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.903983, 77.535515);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Uttarahalli, 180",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.899854, 77.568124);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Yelchenahalli, 181",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.871141, 77.621793);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Begur, 182",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.867808, 77.581171);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Gottigere, 183",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.885711, 77.579244);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Konankunte, 184",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.867041, 77.558436);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Anjanapura, 185",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(13.108650, 77.600653);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Kempegowda Ward, 186",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(13.016020, 77.697683);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "K R Puram, 187",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.952639, 77.507080);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Jnana Bharathi ward, 188",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.921428, 77.600204);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Jayanagar East, 189",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.923498, 77.605502);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Gurappanapalya, 190",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.920270, 77.549957);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Chikkalsandra, 191",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.888376, 77.557234);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Vasanthpura, 192",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.905704, 77.598486);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "J P Nagar, 193",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.921675, 77.612638);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Madivala, 194",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(13.030033, 77.677222);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Ramamurthy Nagar, 195",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(13.044506, 77.651467);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Horamavu, 196",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.951351, 77.687502);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Marathahalli, 197",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.925741, 77.498538);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Hemmigepura, 198",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.914647, 77.638493);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/4B0082.png');
+		var marker = new google.maps.Marker({
+		title: "HSR Layout (sector-4)",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(13.017016, 77.570733);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/4B0082.png');
+		var marker = new google.maps.Marker({
+		title: "IISC - Campus",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.907983, 77.687196);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/4B0082.png');
+		var marker = new google.maps.Marker({
+		title: "Sarjapura (Rainbow Drive)",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(12.799788, 77.661561);
+		var img = new google.maps.MarkerImage('/home/shailesh/anaconda3/envs/RC/lib/python3.7/site-packages/gmplot/markers/4B0082.png');
+		var marker = new google.maps.Marker({
+		title: "Public Affairs Center, Jigani - Bommasandra Link Road",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+	}
+</script>
+</head>
+<body style="margin:0px; padding:0px;" onload="initialize()">
+	<div id="map_canvas" style="width: 100%; height: 100%;"></div>
+</body>
+</html>
