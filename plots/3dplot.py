@@ -37,7 +37,7 @@ ax.set_ylabel('Longitude')
 ax.set_zlabel('Altitude (m)')
 
 ax = fig.add_subplot(212)
-ax.scatter(dis, lon, alt, c='r', marker='o')
+ax.scatter(dis, alt, c='r', marker='o')
 ax.set_xlabel('Distance')
 ax.set_ylabel('Altitude (m)')
 
