@@ -1,0 +1,5 @@
+AM Peak - 7-10
+Midday - 10-16
+PM Peak - 16-19
+Evening - 19-24
+Early Morning - 24-7
