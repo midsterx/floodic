@@ -35,10 +35,13 @@ ax.scatter(lat, lon, alt, c='r', marker='o')
 ax.set_xlabel('Latitude')
 ax.set_ylabel('Longitude')
 ax.set_zlabel('Altitude (m)')
+ax.view_init(60,30)
+ax.view_init(90,0)
 
 ax = fig.add_subplot(212)
 ax.scatter(dis, alt, c='r', marker='o')
 ax.set_xlabel('Distance')
 ax.set_ylabel('Altitude (m)')
+
 
 plt.show()
