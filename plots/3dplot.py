@@ -6,8 +6,8 @@ from mpl_toolkits.mplot3d import Axes3D
 # approximate radius of earth in km
 R = 6373.0
 
-data = pd.read_csv('rc_latlong.txt', sep='\t')
-data = data.sort_values(['latitude','longitude'])
+data = pd.read_csv('rc_latlong_160-171.csv')
+# data = data.sort_values(['latitude','longitude'])
 print(data)
 
 lat = list(data['latitude'])
