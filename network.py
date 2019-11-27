@@ -145,44 +145,46 @@ labels = []
 for i in range(len(traffic_data_next)):
     # early morning
     if traffic_data_next[i][1] == 1:
-        if (traffic_data_next[i][0] - statistics.mean(morning_traffic_norain) >= 100):
+        if ((traffic_data_next[i][0] - statistics.mean(morning_traffic_norain))/statistics.mean(morning_traffic_norain) >= 0.25):
             labels.append(3)
-        elif (traffic_data_next[i][0] - statistics.mean(morning_traffic_norain) >= 50):
+        elif ((traffic_data_next[i][0] - statistics.mean(morning_traffic_norain))/statistics.mean(morning_traffic_norain) >= 0.10):
             labels.append(2)
         else:
             labels.append(1)
     # am peak
     elif traffic_data_next[i][1] == 2:
-        if (traffic_data_next[i][0] - statistics.mean(ampeak_traffic_norain) >= 100):
+        if ((traffic_data_next[i][0] - statistics.mean(ampeak_traffic_norain))/statistics.mean(ampeak_traffic_norain) >= 0.25):
             labels.append(3)
-        elif (traffic_data_next[i][0] - statistics.mean(ampeak_traffic_norain) >= 50):
+        elif ((traffic_data_next[i][0] - statistics.mean(ampeak_traffic_norain))/statistics.mean(ampeak_traffic_norain) >= 0.10):
             labels.append(2)
         else:
             labels.append(1)
     # midday
     elif traffic_data_next[i][1] == 3:
-        if (traffic_data_next[i][0] - statistics.mean(midday_traffic_norain) >= 100):
+        if ((traffic_data_next[i][0] - statistics.mean(midday_traffic_norain))/statistics.mean(midday_traffic_norain) >= 0.25):
             labels.append(3)
-        elif (traffic_data_next[i][0] - statistics.mean(midday_traffic_norain) >= 50):
+        elif ((traffic_data_next[i][0] - statistics.mean(midday_traffic_norain))/statistics.mean(midday_traffic_norain) >= 0.10):
             labels.append(2)
         else:
             labels.append(1)
     # pm peak
     elif traffic_data_next[i][1] == 4:
-        if (traffic_data_next[i][0] - statistics.mean(pmpeak_traffic_norain) >= 100):
+        if ((traffic_data_next[i][0] - statistics.mean(pmpeak_traffic_norain))/statistics.mean(pmpeak_traffic_norain) >= 0.25):
             labels.append(3)
-        elif (traffic_data_next[i][0] - statistics.mean(pmpeak_traffic_norain) >= 50):
+        elif ((traffic_data_next[i][0] - statistics.mean(pmpeak_traffic_norain))/statistics.mean(pmpeak_traffic_norain) >= 0.10):
             labels.append(2)
         else:
             labels.append(1)
     # evening
     elif traffic_data_next[i][1] == 5:
-        if (traffic_data_next[i][0] - statistics.mean(evening_traffic_norain) >= 100):
+        if ((traffic_data_next[i][0] - statistics.mean(evening_traffic_norain))/statistics.mean(evening_traffic_norain) >= 0.25):
             labels.append(3)
-        elif (traffic_data_next[i][0] - statistics.mean(evening_traffic_norain) >= 50):
+        elif ((traffic_data_next[i][0] - statistics.mean(evening_traffic_norain))/statistics.mean(evening_traffic_norain) >= 0.10):
             labels.append(2)
         else:
             labels.append(1)
+
+print(labels)
 
 labels = np.asarray(labels)
 traffic_rain = np.asarray(traffic_rain)
