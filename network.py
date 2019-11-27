@@ -146,43 +146,43 @@ for i in range(len(traffic_data_next)):
     # early morning
     if traffic_data_next[i][1] == 1:
         if ((traffic_data_next[i][0] - statistics.mean(morning_traffic_norain))/statistics.mean(morning_traffic_norain) >= 0.25):
-            labels.append(3)
+            labels.append([0,0,1])
         elif ((traffic_data_next[i][0] - statistics.mean(morning_traffic_norain))/statistics.mean(morning_traffic_norain) >= 0.10):
-            labels.append(2)
+            labels.append([0,1,0])
         else:
-            labels.append(1)
+            labels.append([1,0,0])
     # am peak
     elif traffic_data_next[i][1] == 2:
         if ((traffic_data_next[i][0] - statistics.mean(ampeak_traffic_norain))/statistics.mean(ampeak_traffic_norain) >= 0.25):
-            labels.append(3)
+            labels.append([0,0,1])
         elif ((traffic_data_next[i][0] - statistics.mean(ampeak_traffic_norain))/statistics.mean(ampeak_traffic_norain) >= 0.10):
-            labels.append(2)
+            labels.append([0,1,0])
         else:
-            labels.append(1)
+            labels.append([1,0,0])
     # midday
     elif traffic_data_next[i][1] == 3:
         if ((traffic_data_next[i][0] - statistics.mean(midday_traffic_norain))/statistics.mean(midday_traffic_norain) >= 0.25):
             labels.append(3)
         elif ((traffic_data_next[i][0] - statistics.mean(midday_traffic_norain))/statistics.mean(midday_traffic_norain) >= 0.10):
-            labels.append(2)
+            labels.append([0,1,0])
         else:
-            labels.append(1)
+            labels.append([1,0,0])
     # pm peak
     elif traffic_data_next[i][1] == 4:
         if ((traffic_data_next[i][0] - statistics.mean(pmpeak_traffic_norain))/statistics.mean(pmpeak_traffic_norain) >= 0.25):
-            labels.append(3)
+            labels.append([0,0,1])
         elif ((traffic_data_next[i][0] - statistics.mean(pmpeak_traffic_norain))/statistics.mean(pmpeak_traffic_norain) >= 0.10):
-            labels.append(2)
+            labels.append([0,1,0])
         else:
-            labels.append(1)
+            labels.append([1,0,0])
     # evening
     elif traffic_data_next[i][1] == 5:
         if ((traffic_data_next[i][0] - statistics.mean(evening_traffic_norain))/statistics.mean(evening_traffic_norain) >= 0.25):
-            labels.append(3)
+            labels.append([0,0,1])
         elif ((traffic_data_next[i][0] - statistics.mean(evening_traffic_norain))/statistics.mean(evening_traffic_norain) >= 0.10):
-            labels.append(2)
+            labels.append([0,1,0])
         else:
-            labels.append(1)
+            labels.append([1,0,0])
 
 print(labels)
 
@@ -190,14 +190,14 @@ labels = np.asarray(labels)
 traffic_rain = np.asarray(traffic_rain)
 model = Sequential()
 model.add(Dense(10, activation='sigmoid', input_dim=3))
-model.add(Dense(3, activation='relu'))
-model.add(Dense(10, activation='softmax'))
+model.add(Dense(10, activation='relu'))
+model.add(Dense(3, activation='softmax'))
 
-model.compile(optimizer='rmsprop',
+model.compile(optimizer='adam',
               loss='categorical_crossentropy',
               metrics=['accuracy'])
-model.fit(traffic_rain, labels, epochs=100)
+model.fit(traffic_rain[:31], labels[:31], epochs=100)
 model.summary()
 
-_, accuracy = model.evaluate(traffic_rain, labels)
+_, accuracy = model.evaluate(traffic_rain[31:], labels[31:])
 print('Accuracy: %.2f' % (accuracy*100))
