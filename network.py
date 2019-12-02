@@ -139,7 +139,7 @@ for i in rains:
         evening_traffic_norain.append(means[j][4][0])
     j += 1
 
-print(traffic_data_next)
+# print(traffic_data_next)
 
 labels = []
 for i in range(len(traffic_data_next)):
@@ -151,6 +151,7 @@ for i in range(len(traffic_data_next)):
             labels.append([0,1,0])
         else:
             labels.append([1,0,0])
+        print((traffic_data_next[i][0] - statistics.mean(morning_traffic_norain))/statistics.mean(morning_traffic_norain))
     # am peak
     elif traffic_data_next[i][1] == 2:
         if ((traffic_data_next[i][0] - statistics.mean(ampeak_traffic_norain))/statistics.mean(ampeak_traffic_norain) >= 0.25):
@@ -159,6 +160,7 @@ for i in range(len(traffic_data_next)):
             labels.append([0,1,0])
         else:
             labels.append([1,0,0])
+        print((traffic_data_next[i][0] - statistics.mean(ampeak_traffic_norain))/statistics.mean(ampeak_traffic_norain))
     # midday
     elif traffic_data_next[i][1] == 3:
         if ((traffic_data_next[i][0] - statistics.mean(midday_traffic_norain))/statistics.mean(midday_traffic_norain) >= 0.25):
@@ -167,6 +169,7 @@ for i in range(len(traffic_data_next)):
             labels.append([0,1,0])
         else:
             labels.append([1,0,0])
+        print((traffic_data_next[i][0] - statistics.mean(midday_traffic_norain))/statistics.mean(midday_traffic_norain))
     # pm peak
     elif traffic_data_next[i][1] == 4:
         if ((traffic_data_next[i][0] - statistics.mean(pmpeak_traffic_norain))/statistics.mean(pmpeak_traffic_norain) >= 0.25):
@@ -175,6 +178,7 @@ for i in range(len(traffic_data_next)):
             labels.append([0,1,0])
         else:
             labels.append([1,0,0])
+        print((traffic_data_next[i][0] - statistics.mean(pmpeak_traffic_norain))/statistics.mean(pmpeak_traffic_norain))
     # evening
     elif traffic_data_next[i][1] == 5:
         if ((traffic_data_next[i][0] - statistics.mean(evening_traffic_norain))/statistics.mean(evening_traffic_norain) >= 0.25):
@@ -183,7 +187,7 @@ for i in range(len(traffic_data_next)):
             labels.append([0,1,0])
         else:
             labels.append([1,0,0])
-
+        print((traffic_data_next[i][0] - statistics.mean(evening_traffic_norain))/statistics.mean(evening_traffic_norain))
 print(labels)
 
 labels = np.asarray(labels)

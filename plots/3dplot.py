@@ -6,7 +6,7 @@ from mpl_toolkits.mplot3d import Axes3D
 # approximate radius of earth in km
 R = 6373.0
 
-data = pd.read_csv('rc_latlong_160-171.csv')
+data = pd.read_csv('rc_latlong_160-171_small.csv')
 # data = data.sort_values(['latitude','longitude'])
 print(data)
 
@@ -33,7 +33,9 @@ fig = plt.figure()
 ax = fig.add_subplot(211, projection='3d')
 ax.scatter(lat, lon, alt, c='r', marker='o')
 ax.set_xlabel('Latitude')
+ax.set_xticklabels([], fontdict=None, minor=False)
 ax.set_ylabel('Longitude')
+ax.set_yticklabels([], fontdict=None, minor=False)
 ax.set_zlabel('Altitude (m)')
 ax.view_init(60,30)
 ax.view_init(90,0)
