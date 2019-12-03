@@ -8,17 +8,12 @@ Created on Tue Nov 26 20:02:17 2019
 
 import numpy as np
 import keras
-import json
-import csv
 import pandas as pd
 import glob
-from numpy import cov
-from scipy.stats import pearsonr, spearmanr
-import os
 import statistics
-from operator import attrgetter
 from keras.models import Sequential
-from keras.layers import Dense, Input
+from keras.layers import Dense
+from fancyimpute import IterativeImputer as MICE
 import matplotlib.pyplot as plt
 
 path = ('../Data/Uber_Movement/Daily_final/')
@@ -66,29 +61,31 @@ frame_prec['Date'] = pd.to_datetime(frame_prec['Date'])
 frame_prec.sort_values(by=['Date'])
 
 rains = []
+dates = []
 for idx, rows in frame_prec.groupby(frame_prec.Date.dt.date):
     rain = []
     r = rows.resample('H', on='Date').mean()
+    dates.append(r.index.values)
     try:
         rain.append(statistics.mean(list(r.between_time('00:00:01', '07:00:00', include_start=True, include_end=False)['Rain'])))
     except:
-        rain.append(0)
+        rain.append(np.nan)
     try:
         rain.append(statistics.mean(list(r.between_time('07:00:00', '10:00:00', include_start=True, include_end=False)['Rain'])))
     except:
-        rain.append(0)
+        rain.append(np.nan)
     try:
         rain.append(statistics.mean(list(r.between_time('10:00:00', '16:00:00', include_start=True, include_end=False)['Rain'])))
     except:
-        rain.append(0)
+        rain.append(np.nan)
     try:    
         rain.append(statistics.mean(list(r.between_time('16:00:00', '19:00:00', include_start=True, include_end=False)['Rain'])))
     except:
-        rain.append(0)
+        rain.append(np.nan)
     try:
         rain.append(statistics.mean(list(r.between_time('19:00:00', '23:59:59', include_start=True, include_end=False)['Rain'])))
     except:
-        rain.append(0)
+        rain.append(np.nan)
     rains.append(rain)
 
 rains_corr = []
@@ -100,11 +97,27 @@ for i in means:
     for j in i:
         means_corr.append(j)
 
+rcorr = rains_corr
+mcorr = []
+time_segs = []
+for i in means_corr:
+    mcorr.append(i[0])
+    time_segs.append(i[1])
+print(len(rcorr))
+print(len(mcorr))
+
+mice_imputed = MICE().fit_transform(pd.DataFrame(list(zip(mcorr, rcorr)), columns=['Traffic', 'Rain']))
+rains_corr = mice_imputed[:,1]
+mcorr = mice_imputed[:,0]
+means_corr = []
+for i in range(len(mcorr)):
+    means_corr.append((mcorr[i], time_segs[i]))
+
 traffic_data = []
 rain_data = []
 traffic_data_next = []
 
-for i in range(len(rains_corr)):
+for i in range(len(rains_corr)-1):
     if rains_corr[i] != 0:
         traffic_data.append(means_corr[i])
         rain_data.append(rains_corr[i])
@@ -200,8 +213,21 @@ model.add(Dense(3, activation='softmax'))
 model.compile(optimizer='adam',
               loss='categorical_crossentropy',
               metrics=['accuracy'])
-model.fit(traffic_rain[:31], labels[:31], epochs=100)
+history = model.fit(traffic_rain[:31], labels[:31], epochs=100)
 model.summary()
 
 _, accuracy = model.evaluate(traffic_rain[31:], labels[31:])
 print('Accuracy: %.2f' % (accuracy*100))
+
+plt.plot(history.history['accuracy'])
+plt.title('model accuracy')
+plt.ylabel('accuracy')
+plt.xlabel('epoch')
+plt.legend(['train', 'test'], loc='upper left')
+plt.show()
+# summarize history for loss
+plt.plot(history.history['loss'])
+plt.title('model loss')
+plt.ylabel('loss')
+plt.xlabel('epoch')
+plt.show()
