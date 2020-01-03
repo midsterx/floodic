@@ -24,7 +24,7 @@ app.post("/dateTime",function(req,res,err){
 	console.log(req.body.date)
 	console.log(req.body.time)
 	console.log(req.body.date+" "+req.body.time)
-	var process = spawn("C:\\Users\\sunri\\AppData\\Local\\Programs\\Python\\Python38\\python", ["C:/Users/sunri/Desktop/a.py",req.body.date+" "+req.body.time])
+	var process = spawn("python", ["mapGenerator.py",req.body.date+" "+req.body.time])
 	process.stdout.on("data", function (data) {
     res.send(data.toString());
   });
