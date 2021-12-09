@@ -12,7 +12,7 @@ longitude_list = [77.642876,77.641632,77.641707,77.642956]
 gmap5 = gmplot.GoogleMapPlotter("12.918950","77.642100",19)  
 #gmap5.scatter( latitude_list, longitude_list, '# FF0000', 
 #                                size = 40, marker = False) 
-gmap5.apikey = "AIzaSyC3PGO0YO_ScHdVP9jj0b7T4ahljEii2qA" 
+gmap5.apikey = "" 
 # polygon method Draw a polygon with 
 # the help of coordinates 
 print(sys.argv[1])
